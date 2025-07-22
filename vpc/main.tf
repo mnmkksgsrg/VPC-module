@@ -48,7 +48,7 @@ resource "aws_route_table_association" "this" {
 resource "aws_security_group" "this" {
   vpc_id = aws_vpc.this.id
   name   = "allow-http-ssh"
-  description = "HTTPとSSHの通信を許可"
+  description = "llow HTTP and SSH traffic"
 
   ingress {
     from_port   = 80
